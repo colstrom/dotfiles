@@ -1,0 +1,3 @@
+[submodule "private"]
+	path = private
+	url = https://bitbucket.org/colstrom/dotfiles-private.git
