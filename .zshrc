@@ -50,7 +50,7 @@ ZSH_TMUX_AUTOSTART="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(autojump aws coffee common-aliases dircycle dirhistory gem git git-extras git-flow-avh gpg-agent last-working-dir nanoc npm per-directory-history pip python redis-cli ssh-agent taskwarrior tmux web-search wd)
+plugins=(autojump aws coffee common-aliases dircycle dirhistory gem git git-extras git-flow-avh nanoc npm per-directory-history pip python redis-cli ssh-agent taskwarrior tmux web-search wd)
 
 source $ZSH/oh-my-zsh.sh
 
