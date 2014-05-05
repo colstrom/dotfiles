@@ -4,5 +4,5 @@ if [ ! -d ~/ansible ]; then
   git clone https://github.com/ansible/ansible.git ~/ansible
 fi
 
-source ~/ansible/hacking/env-setup
+source ~/ansible/hacking/env-setup > /dev/null
 ansible-playbook setup.yml
