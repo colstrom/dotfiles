@@ -5,4 +5,4 @@ if [ ! -d ~/ansible ]; then
 fi
 
 source ~/ansible/hacking/env-setup > /dev/null
-ansible-playbook setup.yml
+ansible-playbook -i ansible_hosts setup.yml
