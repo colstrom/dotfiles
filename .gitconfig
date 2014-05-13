@@ -1,5 +1,5 @@
 [user]
 	name = Chris Olstrom
 	email = chris@olstrom.com
-[push]
-	default = simple
+#[push]
+#	default = simple
