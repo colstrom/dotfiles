@@ -10,3 +10,4 @@
   - file: state=link src="~/.dotfiles/.nanorc"    path="~/.nanorc"
   - file: state=link src="~/.dotfiles/.gitconfig" path="~/.gitconfig"
   - file: state=link src="~/.dotfiles/.zshrc"     path="~/.zshrc"
+  - file: state=link src="~/.dotfiles/Preferences.sublime-settings" path="~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings"
