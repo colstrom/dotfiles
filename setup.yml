@@ -2,12 +2,39 @@
 - connection: local
   hosts: localhost
   gather_facts: false
+  vars:
+    using_desktop: no
   tasks:
-  - git: repo="https://github.com/ansible/ansible.git" dest="~/ansible" update=yes
-  - git: repo="https://github.com/robbyrussell/oh-my-zsh.git" dest="~/.oh-my-zsh" update=yes
-  - git: repo="https://github.com/colstrom/dotfiles.git" dest="~/.dotfiles" update=yes
-  - file: state=link src="~/.dotfiles/.tmux.conf" path="~/.tmux.conf"
-  - file: state=link src="~/.dotfiles/.nanorc"    path="~/.nanorc"
-  - file: state=link src="~/.dotfiles/.gitconfig" path="~/.gitconfig"
-  - file: state=link src="~/.dotfiles/.zshrc"     path="~/.zshrc"
-  - file: state=link src="~/.dotfiles/Preferences.sublime-settings" path="~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings"
+  - git:
+      repo: 'https://github.com/ansible/ansible.git'
+      dest: '~/ansible'
+      update: yes
+  - git:
+      repo: 'https://github.com/robbyrussell/oh-my-zsh.git'
+      dest: '~/.oh-my-zsh'
+      update: yes
+  - git:
+      repo: 'https://github.com/colstrom/dotfiles.git'
+      dest: '~/.dotfiles'
+      update: yes
+  - file:
+      state: link
+      src: '~/.dotfiles/.tmux.conf'
+      path: '~/.tmux.conf'
+  - file:
+      state: link
+      src: '~/.dotfiles/.nanorc'   
+      path: '~/.nanorc'
+  - file:
+      state: link
+      src: '~/.dotfiles/.gitconfig'
+      path: '~/.gitconfig'
+  - file:
+      state: link
+      src: '~/.dotfiles/.zshrc'    
+      path: '~/.zshrc'
+  - file:
+      state: link
+      src: '~/.dotfiles/Preferences.sublime-settings'
+      path: '~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings'
+    when: using_desktop

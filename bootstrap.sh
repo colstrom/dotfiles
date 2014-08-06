@@ -1,4 +1,4 @@
-#!/usr/bin/zsh
+#!/bin/zsh
 
 if [ ! -d ~/ansible ]; then
   git clone https://github.com/ansible/ansible.git ~/ansible

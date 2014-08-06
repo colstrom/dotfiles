@@ -45,12 +45,12 @@ HIST_STAMPS="yyyy-mm-dd"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-ZSH_TMUX_AUTOSTART="true"
+ZSH_TMUX_AUTOSTART="false"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(autojump aws coffee common-aliases dircycle dirhistory gem git git-extras git-flow-avh nanoc npm per-directory-history pip python redis-cli ssh-agent taskwarrior tmux web-search wd)
+plugins=(autojump aws coffee common-aliases dircycle dirhistory gem git git-extras git-flow-avh nanoc npm per-directory-history pip python redis-cli taskwarrior tmux web-search wd)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -74,3 +74,11 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+if [[ -f ~/ansible/hacking/env-setup ]]; then
+  source ~/ansible/hacking/env-setup > /dev/null
+fi
+
+if [[ -f ~/.aws.conf ]]; then
+  source ~/.aws.conf
+fi
