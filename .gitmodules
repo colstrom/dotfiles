@@ -4,3 +4,6 @@
 [submodule "extras/chruby-fish"]
 	path = extras/chruby-fish
 	url = https://github.com/JeanMertz/chruby-fish.git
+[submodule "extras/ruby-install"]
+	path = extras/ruby-install
+	url = https://github.com/postmodern/ruby-install.git
