@@ -1,3 +1,6 @@
 [submodule ".config/fish/plugins/z"]
 	path = .config/fish/plugins/z
 	url = https://github.com/sjl/z-fish
+[submodule "extras/chruby-fish"]
+	path = extras/chruby-fish
+	url = https://github.com/JeanMertz/chruby-fish.git
