@@ -7,3 +7,6 @@
 [submodule "extras/ruby-install"]
 	path = extras/ruby-install
 	url = https://github.com/postmodern/ruby-install.git
+[submodule "extras/wemux"]
+	path = extras/wemux
+	url = https://github.com/zolrath/wemux.git
